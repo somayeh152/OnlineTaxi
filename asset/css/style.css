@@ -1,0 +1,327 @@
+@font-face {
+ font-family: 'byekan';
+ src:local('BYekan'),
+     url('../font/BYekan.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IRANSansBold';
+src:local('IRANSans_Bold'),
+    url('../font/IRANSans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IRANSans';
+src:local('IRANSans'),
+    url('../font/IRANSans.ttf') format('truetype');
+}
+
+*{
+   padding: 0px;
+   margin: 0px;
+   text-decoration: none;
+   font-family: 'IRANSans', 'byekan' , sans-serif, Tahoma;
+}
+body{
+ background-color: #f5f5f5;
+ /* font-size: 1.5rem; */
+ line-height: 1.5;
+}
+
+#navbar{
+ background-color: #fff;
+ left: 0;
+ right: 20%;
+ position: absolute;
+ height: 50px;
+ padding: 20px;
+ box-shadow: 0 0 6px rgba(0,0,0,.1)!important;
+}
+
+#navbar i{
+ font-size: 2.5rem;
+ margin-top: -10px;
+ color: #403ecd;
+}
+
+#navbar ul{
+ list-style-type: none;
+ left: 0;
+ top: 0;
+ position: absolute;
+}
+
+#navbar li{
+ display: inline;
+}
+
+#navbar li a{
+ display: inline-block;
+ /* width: 25px;
+ height: 25px; */
+ width: 50px;
+ height: 50px;
+ text-align: center;
+ line-height: 50px;
+ margin-right: -5px;
+}
+
+#navbar li a:hover{
+ background-color: #eee;
+}
+
+#navbar li img{
+ width: 27px;
+ height: 27px;
+}
+
+#navbar li i{
+ font-size: 20px;
+ color: #403ecd;
+}
+
+#sidebar{
+background-color: #403ecd;
+width: 20%;
+right: 0;
+left: auto;
+position: fixed;
+height: 100%;
+overflow-y: auto;
+/* overflow-x: hidden; */
+}
+
+#sidebar ul{
+ list-style-type: none;
+ padding-top: 10px;
+}
+
+#sidebar li a:hover{
+ background-color: #48baf0;
+}
+
+#sidebar li a{
+ display: block;
+ padding: 10px 30px 10px 0;
+ text-decoration: none;
+ color: rgba(255,255,255,0.8);
+ font-size: 1.5rem;
+ /* font-size: 16px; */
+ /* font-weight: 600; */
+}
+
+#sidebar li i{
+ display: inline-block;
+ margin-left: 20px;
+ /* line-height: 30px; */
+}
+
+#sidebar .fa-chevron-down{
+ font-size: 10px;
+ float: left;
+}
+
+ul.submenu {
+ display: none;
+ padding-right: 30px;
+}
+
+#brand{
+ height: 50px;
+}
+
+#brand a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+#brand h1{
+   /* font-size: 25px; */
+ font-size: 2.7rem;
+ line-height: 0.5;
+ text-align: center;
+}
+
+#sidebar span{
+ display: block;
+ padding: 20px 30px;
+ color: rgba(255,255,255,0.8);
+ /* font-size: 20px; */
+ font-size: 2rem;
+}
+
+#main{
+/* background-color: yellow; */
+z-index: 50;
+position: absolute;
+right: 20%;
+left: 0;
+top: 50px;
+height: auto;
+padding: 20px;
+}
+
+#users , #single-user , #news , #drivers , #single-driver , #payments, #travels, #setting{
+  /* border: 1px solid #000; */
+  /* font-size: 12px; */
+font-size: 1.2rem;
+overflow-x: auto;
+/* overflow-y: auto; */
+}
+.panel{
+   overflow-x: auto;
+   padding: 10px 20px;
+ }
+
+ .panel-default>.panel-heading {
+     background-color: #fff;
+     border-color: transparent;
+     font-size: 2rem;
+     margin: 10px 0;
+ }
+
+#users .table , #single-user .table , #news .table , #drivers .table , #single-driver .table, #payments .table, #travels .table, #setting .table{
+ border: 1px solid #403ecd;
+}
+
+
+#users .table th , #single-user .table th , #news .table th , #drivers .table th , #single-driver .table th, #payments .table th , #travels .table th , #setting .table th {
+ color: #fff;
+ padding-right: 15px;
+ border: 1px solid #403ecd;
+ border-left: 1px solid #ddd;
+ background-color: #403ecd;
+ font-weight: lighter;
+}
+
+#users .table th:nth-last-child(1), #single-user .table th:nth-last-child(1), #news .table th:nth-last-child(1), #drivers .table th:nth-last-child(1), #single-driver .table th:nth-last-child(1), #payments .table th:nth-last-child(1), #travels .table th:nth-last-child(1){
+  border-left: 1px solid #403ecd;
+}
+
+#setting .table th:nth-last-child(1){
+  border-left: 1px solid #403ecd;
+}
+
+
+#users .table td , #single-user .table td , #news .table td , #drivers .table td , #single-driver .table td, #payments .table td, #travels .table td, #setting .table td{
+ padding-right: 15px;
+ border: 1px solid #403ecd;
+}
+
+ #single-user .table tr:hover , #news .table tr:hover , #single-driver .table tr:hover, #payments .table tr:hover, #travels .table tr:hover, #setting .table tr:hover{
+   background-color: #ddd;
+ }
+
+
+#users .table tr:hover , #drivers .table tr:hover{
+ background-color: #ddd;
+ cursor: pointer;
+}
+
+#users tr:nth-child(even) , #single-user tr:nth-child(even) , #news tr:nth-child(even) , #drivers tr:nth-child(even) , #single-driver tr:nth-child(even) , #payments tr:nth-child(even), #travels tr:nth-child(even), #setting tr:nth-child(even){
+ background-color: #f9f9f9;
+}
+
+#users-pagination , .single-user-pagination , #news-pagination, #drivers-pagination , .single-driver-pagination , #payments-pagination, #travels-pagination{
+ text-align: center;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #403ecd;
+    border-color: #403ecd;
+}
+
+#single-user .tab-content , #single-driver .tab-content{
+ padding: 10px;
+ border: 1px solid #ddd;
+ border-top-color: transparent;
+}
+
+#single-user .tab-content h3 ,  #single-driver .tab-content h3{
+ font-size: 1.8rem;
+ margin: 20px 10px;
+}
+#single-user .tab-content p ,  #single-driver .tab-content p{
+ font-size: 1.2rem;
+}
+
+#single-user .nav a ,  #single-driver .nav a{
+  font-size: 1.3rem;
+}
+
+#adduser button, #adddriver button, #addnews button, #edituser button, #editdriver button , #setting-buttons a, #addsetting button , #editsetting button{
+  color: #fff;
+  background-color: #403ecd;
+  margin: 50px 0;
+}
+
+#adduser .control-label, #adddriver .control-label, #addnews .control-label, #edituser .control-label, #editdriver .control-label, #setting-buttons .control-label, #addsetting .control-label, #editsetting .control-label{
+ font-size: 1.4rem;
+}
+
+#user-profile, #driver-profile{
+  min-height: 250px;
+}
+#user-profile .user-info h4 ,#driver-profile .driver-info h4{
+ display: inline-block;
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: #403ecd;
+}
+
+#user-profile .user-info span, #driver-profile .driver-info span{
+ font-size: 1.3rem;
+ padding-right: 10px;
+ color: #555;
+}
+
+#user-profile .user-info a, #driver-profile .driver-info a{
+ color: #fff;
+ background-color: #403ecd;
+ margin: 50px 0 20px 0;
+}
+
+#setting-buttons{
+ text-align: center;
+}
+
+#addsetting .newItem{
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px and min-width:425px) {
+ #brand h1{    font-size: 1.5rem;}
+ #sidebar span{    font-size: 1.2rem;  display: inline-block; padding: 20px 5px;}
+
+ #sidebar li a{
+   margin: auto;
+   font-size: 1.2rem;
+ }
+
+ #sidebar .fa-chevron-down{
+   float: right;
+ }
+
+ ul.submenu {
+   padding-right: 0px;
+ }
+
+}
+
+@media screen and (max-width: 425px) {
+ #brand h1{    font-size: 1.2rem; font-weight: bold;}
+ #sidebar span{    font-size: 1rem;  display: inline-block; padding: 20px 5px;}
+
+ #sidebar li a{
+   margin: auto;
+   font-size: 1.2rem;
+ }
+
+ #sidebar .fa-chevron-down{
+   float: right;
+ }
+
+ ul.submenu {
+   padding-right: 0px;
+ }
+}

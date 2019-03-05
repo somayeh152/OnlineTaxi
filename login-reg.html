@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>loginpage</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/loginstyle.css">
+
+  <body>
+    <div class="fluid-container" id="holder">
+        <!-- Start of main section ---------------------------->
+        <div id="login">
+          <div id="toplinks">
+            <a id="signinlink" style="color: #403ecd">ورود</a>
+            <a id="reglink">ثبت‌نام</a>
+          </div>
+          <!-- start loginform form -->
+          <div id="loginform" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default col-md-offset-3 col-md-6">
+              <div class="panel-heading">ورود به سیستم</div>
+              <form class="form-horizontal" action="index.php" method="post">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="loginusername">نام کاربری</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="loginusername">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="loginpass">رمز عبور</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="loginpass">
+                    </div>
+                  </div>
+               <div class="col-md-offset-4 col-md-6">
+                 <button type="submit" class="btn btn-default col-md-12 col-sm-6 col-xs-12">ورود</button>
+               </div>
+             </form>
+             <div class="col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11">
+               <a href="#" id="forgetlink">رمز عبور را فراموش کرده‌اید؟</a>
+             </div>
+            </div>
+          </div>
+
+          <!-- start forgetpassform form -->
+          <div id="forgetpassform" class="col-md-12 col-sm-12 col-xs-12" style="display: none;">
+            <div class="panel panel-default col-md-offset-3 col-md-6">
+              <div class="panel-heading">بازگردانی رمز عبور</div>
+              <form class="form-horizontal" action="index.php" method="post">
+                  <div class="col-md-offset-1 col-md-10">
+                    <span>درصورت فراموشی رمز عبور ایمیل خود را ارسال نمایید</span>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                      <input type="email" class="form-control" name="forgetpassemail" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                  </div>
+               <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                 <button type="submit" class="btn btn-default col-md-12 col-sm-6 col-xs-12">ارسال</button>
+               </div>
+             </form>
+            </div>
+          </div>
+
+          <!-- start regform form -->
+          <div id="regform" class="col-md-12 col-sm-12 col-xs-12" style="display: none;">
+            <div class="panel panel-default col-md-offset-3 col-md-6">
+              <div class="panel-heading">ثبت‌نام در سیستم</div>
+              <form class="form-horizontal" action="index.php" method="post">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="regname">نام</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="regname">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="reglastname">نام‌خانوادگی</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="reglastname">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="regemail">ایمیل</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="regemail">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="regpass">رمز عبور</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="regpass">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="regpass">تکرار رمز عبور</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="regpass">
+                    </div>
+                  </div>
+               <div class="col-md-offset-4 col-md-6">
+                 <button type="submit" class="btn btn-default col-md-12 col-sm-6 col-xs-12">ثبت نام</button>
+               </div>
+             </form>
+            </div>
+          </div>
+
+        </div>
+        <!-- End of main section ---------------------------->
+
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/loginscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+ font-family: 'byekan';
+ src:local('BYekan'),
+     url('../font/BYekan.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IRANSansBold';
+src:local('IRANSans_Bold'),
+    url('../font/IRANSans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IRANSans';
+src:local('IRANSans'),
+    url('../font/IRANSans.ttf') format('truetype');
+}
+
+*{
+   padding: 0px;
+   margin: 0px;
+   text-decoration: none;
+   font-family: 'IRANSans', 'byekan' , sans-serif, Tahoma;
+}
+body{
+ background-color: #f5f5f5;
+ font-size: 1.2rem;
+ line-height: 1.5;
+}
+
+#login{
+/* background-color: yellow; */
+/* font-size: 1.5rem; */
+position: absolute;
+right: 15%;
+left:  15%;
+top:  10%;
+}
+
+
+#toplinks{
+  text-align: center;
+}
+
+#toplinks a{
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  letter-spacing: 1.5px;
+  color: #2f2f2f;
+}
+
+#signinlink{
+  font-weight: bold;
+}
+
+#loginform button, #regform button{
+  color: #fff;
+  background-color: #403ecd;
+  margin: 50px 0 30px 0;
+}
+
+ #forgetpassform button{
+   color: #fff;
+   background-color: #403ecd;
+   margin: 15px 0 30px 0;
+ }
+
+#loginform .panel-heading, #regform .panel-heading, #forgetpassform .panel-heading{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+#loginform .panel, #regform .panel, #forgetpassform .panel{
+    box-shadow: 0 0px 1px rgba(0,0,0,0.3);
+}
+
+#forgetpassform span{
+  display: block;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+#forgetpassform input{
+  font-size: 12px;
+}
+
+#login a{
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#forgetlink{
+  color: #403ecd;
+}
+#forgetlink:hover{
+  color: #48baf0;
+}
+@media screen and (max-width: 425px) {
+  #login{
+  right: 5%;
+  left:  5%;
+  }
+}

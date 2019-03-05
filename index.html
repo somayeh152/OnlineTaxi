@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>panel</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+  <body>
+    <div class="fluid-container" id="holder">
+      <!-- Start of navbar. Top bar in the page ------------------------>
+        <div id="navbar">
+          <i class="fa fa-bars" aria-hidden="true" id="navButton"></i>
+            <ul>
+              <li><a href="#" alt="alarm" id="alarm"><i class="far fa-envelope"></i></a></li>
+              <li><a href="#" alt="avatar" id="avatar"><img src="./asset/img/avatar.png" alt="avatar"></a></li>
+            </ul>
+        </div>
+        <!-- End of navbar. Top bar in the page ----------------------->
+        <!-- Start of sidebar ---------------------------->
+        <div id="sidebar">
+          <div id="brand">
+            <a href="index.html"><h1>تاکسی آنلاین</h1></a>
+          </div>
+            <span>خوش آمدید</span>
+          <ul>
+            <li>
+              <a class="uppermenu"><i class="fa fa-user"></i>کاربر<i class="fa fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a class="ex" href="index.html"><i class="fa fa-table"></i>لیست کاربران</a></li>
+                <!-- <li><a class="ex" href="#"><i class="fa fa-map"></i>سفرها</a></li>
+                <li><a class="ex" href="#"><i class="fa fa-credit-card"></i>پرداخت‌ها</a></li> -->
+                <!-- <li><a class="ex" href="#"><i class="fa fa-desktop"></i>تنظیمات</a></li> -->
+                <li><a class="ex" href="adduser.html"><i class="far fa-address-book"></i>اضافه کردن کاربر</a></li>
+                <li><a class="ex" href="edituser.html"><i class="fas fa-user-edit"></i>ویرایش کاربر</a></li>
+                <!-- <li><a href="#"><i class="fa fa-id-card"></i>ویرایش کاربر</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a class="uppermenu"><i class="fa fa-taxi"></i>راننده <i class="fa fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a class="ex" href="drivers.html"><i class="fa fa-table"></i>لیست راننده‌ها</a></li>
+                <!-- <li><a class="ex" href="#"><i class="fa fa-map"></i>سفرها</a></li> -->
+                <!-- <li><a class="ex" href="#"><i class="fa fa-suitcase"></i>سفرها</a></li> -->
+                <!-- <li><a class="ex" href="#"><i class="fa fa-envelope-o"></i>درآمدها</a></li> -->
+                <!-- <li><a class="ex" href="#"><i class="fa fa-desktop"></i>تنظیمات</a></li> -->
+                <li><a class="ex" href="adddriver.html"><i class="fa fa-id-badge"></i>اضافه کردن راننده</a></li>
+                <li><a class="ex" href="editdriver.html"><i class="fa fa-edit"></i>ویرایش راننده</a></li>
+              </ul>
+            </li>
+            <li><a class="ex" href="#"><i class="fas fa-user-tie"></i>ادمین</a></li>
+            <li><a class="ex" href="travels.html"><i class="fa fa-map"></i>سفرها</a></li>
+            <li><a class="ex" href="payments.html"><i class="fa fa-credit-card"></i>پرداخت‌ها</a></li>
+            <li>
+              <a class="uppermenu"><i class="fas fa-share-alt-square"></i>خبرها <i class="fa fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a class="ex" id="listnews" href="news.html"><i class="fa fa-newspaper"></i>لیست خبرها</a></li>
+                <li><a class="ex" href="addnews.html"><i class="fas fa-pen-nib"></i>اضافه کردن خبر</a></li>
+              </ul>
+            </li>
+            <li><a class="ex" href="setting.html"><i class="fa fa-desktop"></i>تنظیمات</a></li>
+          </ul>
+        </div>
+        <!-- End of sidebar ---------------------------->
+
+        <!-- Start of main section ---------------------------->
+        <div id="main">
+
+          <!-- Start of Users List ------------------------------------>
+          <div id="users" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">لیست کاربران</div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>کد کاربری</th>
+                    <th>نام و نام‌خانوادگی</th>
+                    <th>شماره تماس</th>
+                    <th>ایمیل</th>
+                    <th>آدرس</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>120</td>
+                    <td>مازیار شفیعی</td>
+                    <td>09112223311</td>
+                    <td>Arash@gmail.com</td>
+                    <td>تهران- شهرک غرب- ............</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>مازیار شفیعی</td>
+                    <td>09112223311</td>
+                    <td>Arash@gmail.com</td>
+                    <td>تهران- شهرک غرب- ............</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>مازیار شفیعی</td>
+                    <td>09112223311</td>
+                    <td>Arash@gmail.com</td>
+                    <td>تهران- شهرک غرب- ............</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>مازیار شفیعی</td>
+                    <td>09112223311</td>
+                    <td>Arash@gmail.com</td>
+                    <td>تهران- شهرک غرب- ............</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>مازیار شفیعی</td>
+                    <td>09112223311</td>
+                    <td>Arash@gmail.com</td>
+                    <td>تهران- شهرک غرب- ............</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <div id="users-pagination">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#">&laquo;</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Users List ------------------------------------>
+
+            <!-- Start of single-user panel ------------------------------------>
+          <div id="single-user" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default" style="display:none;">
+              <div class="panel-heading"> کاربر</div>
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#user-profile" data-toggle="tab" >پروفایل</a></li>
+                <li><a href="#user-travels" data-toggle="tab">سفرها</a></li>
+                <li><a href="#user-payments" data-toggle="tab">پرداختها</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <!-- user-profile Tab -->
+                <div id="user-profile" class="tab-pane fade in active">
+                  <h3>پروفایل</h3>
+                  <div class="user-info rows">
+                    <div class="col-md-offset-2 col-md-4 col-xs-12">
+                      <h4>کد کاربر:</h4><span>120</span>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <h4>نام و نام‌خانوادگی:</h4><span>مازیار شفیعی</span>
+                    </div>
+                    <div class="col-md-offset-2 col-md-4 col-xs-12">
+                        <h4>شماره تماس:</h4><span>09112223311</span>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <h4>ایمیل:</h4><span>Arash@gmail.com</span>
+                    </div>
+                    <div class="col-md-offset-2 col-md-10 col-xs-12">
+                      <h4>آدرس:</h4><span>تهران- شهرک غرب- ............</span>
+                    </div>
+                    <div class="col-md-offset-5 col-md-3">
+                      <a href="./edituser.html" type="button" class="btn btn-default">ویرایش پروفایل کاربر</a>
+                    </div>
+                    <!-- <h4></h4><span></span> -->
+                  </div>
+                </div>
+
+                <!-- user-travels Tab -->
+                <div id="user-travels" class="tab-pane fade">
+                  <h3>لیست سفرهای کاربر</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>شماره سفر</th>
+                        <th>مبدا</th>
+                        <th>مقصد</th>
+                        <th>تاریخ سفر</th>
+                        <th>هزینه سفر (ریال)</th>
+                        <th>تخفیف (ریال)</th>
+                        <th>مبلغ پرداختی (ریال)</th>
+                        <th>کد راننده</th>
+                        <th>ساعت درخواست</th>
+                        <th>زمان پایان سفر</th>
+                        <th>ثبت نظر</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>101</td>
+                        <td>تهران- شریعتی- ....</td>
+                        <td> تهران- انقلاب- خیابان انقلاب- تئاتر شهر</td>
+                        <td>02/10/1397</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>14:15:15</td>
+                        <td>14:37:26</td>
+                        <td>خوب</td>
+                      </tr>
+                      <tr>
+                        <td>101</td>
+                        <td>تهران- شریعتی- ....</td>
+                        <td> تهران- انقلاب- خیابان انقلاب- تئاتر شهر</td>
+                        <td>02/10/1397</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>14:15:15</td>
+                        <td>14:37:26</td>
+                        <td>عالی</td>
+                      </tr>
+                      <tr>
+                        <td>101</td>
+                        <td>تهران- شریعتی- ....</td>
+                        <td> تهران- انقلاب- خیابان انقلاب- تئاتر شهر</td>
+                        <td>02/10/1397</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>14:15:15</td>
+                        <td>14:37:26</td>
+                        <td>متوسط</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="single-user-pagination">
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#">&laquo;</a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!--  user-payments Tab -->
+                <div id="user-payments" class="tab-pane fade">
+                  <h3>پرداختها</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>شماره پرداخت</th>
+                        <th>تاریخ پرداخت</th>
+                        <th>نوع پرداخت</th>
+                        <th>هزینه سفر (ریال)</th>
+                        <th>تخفیف (ریال)</th>
+                        <th>مبلغ پرداختی (ریال)</th>
+                        <th>کد راننده</th>
+                        <th>طول مدت سفر</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>p11</td>
+                        <td>02/10/1397</td>
+                        <td>اینترنتی</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>00:02:11</td>
+                      </tr>
+                      <tr>
+                        <td>p11</td>
+                        <td>02/10/1397</td>
+                        <td>اینترنتی</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>00:02:11</td>
+                      </tr>
+                      <tr>
+                        <td>p11</td>
+                        <td>02/10/1397</td>
+                        <td>اینترنتی</td>
+                        <td>45000</td>
+                        <td>-</td>
+                        <td>45000</td>
+                        <td>1122</td>
+                        <td>00:02:11</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="single-user-pagination">
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#">&laquo;</a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- End of single-user panel ------------------------------------>
+
+        </div>
+        <!-- End of main section ---------------------------->
+
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
